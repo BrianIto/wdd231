@@ -12,7 +12,6 @@ header {
 
 header h1 {
   display: flex;
-
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -78,57 +77,60 @@ main {
   gap: 1rem;
   margin: 1rem auto;
   max-width: 1200px;
-  section {
-    border: 1px solid #d0d0d0;
-    border-radius: 0.5rem;
-    img {
-      width: 100%;
-    }
-    h2 {
-      margin: 0;
-      text-align: center;
-      padding: 1rem;
-      color: #fff;
-      border-radius: 0.5rem 0.5rem 0 0;
-      background-color: #3641a0;
-    }
-    &:nth-child(3) {
-      grid-column: span 2;
-    }
-  }
-  .certificates {
-    .filter-buttons {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-      padding: 1rem;
-      button {
-        padding: 1rem 1.5rem;
-        font-size: 1.25rem;
-        background-color: #ccc;
-        border: none;
-        cursor: pointer;
-        border-radius: 0.5rem;
-      }
-    }
-    #courses {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 1rem;
-      padding: 1rem;
-      div {
-        background-color: #d3d3d3;
-        color: #000;
-        text-align: center;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        &.completed {
-          background-color: #1d3461;
-          color: #fff;
-        }
-      }
-    }
-  }
+}
+
+main section {
+  border: 1px solid #d0d0d0;
+  border-radius: 0.5rem;
+}
+
+main section img {
+  width: 100%;
+}
+main section h2 {
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #3641a0;
+}
+main section:nth-child(3) {
+  grid-column: span 2;
+}
+
+main .certificates .filter-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+main .certificates .filter-buttons button {
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+#courses {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+#courses div {
+  background-color: #d3d3d3;
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+courses div &.completed {
+  background-color: #1d3461;
+  color: #fff;
 }
 
 footer {
@@ -151,30 +153,28 @@ figcaption {
 
   header {
     display: block;
-    h1 {
-      img {
-        width: 150px;
-      }
+  }
+  header h1 {
+    img {
+      width: 150px;
     }
-    #menu {
-      display: none;
-    }
-    nav {
-      display: block;
-    }
+  }
+  header #menu {
+    display: none;
+  }
+  header nav {
+    display: block;
   }
 
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    .certificates {
-      .filter-buttons {
-        display: flex;
-        justify-content: center;
-      }
-      #courses {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
+  }
+  main .certificates .filter-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  #courses {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

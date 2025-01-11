@@ -8,6 +8,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   h1 {
+	img {
+	    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+	    width: 80px; }
+	display: flex;
+
+	justify-content: center;
+	align-items:center;
+	gap: 2rem;
     padding: 2rem;
     width: calc(100vw - 10rem);
     margin: 0;
@@ -24,14 +32,23 @@ header {
   .navigation {
     list-style: none;
     margin: 0 auto;
-  }
-  nav {
+  } nav {
     width: 100%;
     display: none;
     background-color: #1d3461;
     a {
       color: #fff;
       text-decoration: none;
+	    opacity: 0.66;
+	    padding: 0.5rem 2rem;
+	    transition: all .2s ease-in-out;
+	&.active {
+		opacity: 1;
+		border-bottom: 2px solid #FFF;
+	    }
+	    &:hover{
+		opacity: 1;
+	    }
     }
     li {
       padding: 1.5rem;
@@ -43,7 +60,8 @@ header {
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 1rem auto;
@@ -51,6 +69,9 @@ main {
   section {
     border: 1px solid #d0d0d0;
     border-radius: 0.5rem;
+    img {
+      width: 100%;
+    }
     h2 {
       margin: 0;
       text-align: center;
@@ -58,6 +79,42 @@ main {
       color: #fff;
       border-radius: 0.5rem 0.5rem 0 0;
       background-color: #3641a0;
+    }
+    &:nth-child(3) {
+      grid-column: span 2;
+    }
+  }
+  .certificates {
+    .filter-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      padding: 1rem;
+      button {
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem;
+        background-color: #ccc;
+        border: none;
+		cursor:pointer;
+        border-radius: 0.5rem;
+      }
+    }
+    #courses {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+	    div {
+		background-color: #D3D3D3;
+		color: #000;
+		text-align: center;
+		padding: 1rem;
+		border-radius: .5rem;
+		&.completed {
+		    background-color: #1d3461;
+		    color: #FFF;
+		}
+	    }
     }
   }
 }
@@ -69,6 +126,11 @@ footer {
   padding: 1rem;
 }
 
+figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
 @media (min-width: 40em) {
   .navigation {
     display: flex;
@@ -77,11 +139,31 @@ footer {
 
   header {
     display: block;
+	h1 {
+	    img {
+		width: 150px;
+	    }
+	}
     #menu {
       display: none;
     }
-	nav {
-	    display: block;
-	}
+    nav {
+      display: block;
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .certificates {
+      .filter-buttons {
+        display: flex;
+        justify-content: center;
+      }
+	    #courses {
+		grid-template-columns: repeat(3, 1fr);
+	  }
+	    }
+    }
   }
 }

@@ -10,6 +10,7 @@
     <link href="styles/style.css" rel="stylesheet" />
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamb.js" defer></script>
+    <script src="scripts/courseslist.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Brian Ito" />
@@ -21,12 +22,14 @@
   </head>
   <body>
     <header>
-      <h1>Brian Ito 👋 | wdd231</h1>
+      <h1>
+        <img src="images/profile.webp" alt="profile picture" />Brian Ito 👋 | wdd231
+      </h1>
       <a id="menu"></a>
       <nav>
         <ul class="navigation">
           <li>
-            <a href="/">Home</a>
+            <a class="active" href="/">Home</a>
           </li>
           <li>
             <a href="#">Chamber</a>
@@ -45,16 +48,27 @@
     <main>
       <section>
         <h2>Course Work</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
       <section>
         <h2>Manaus, Amazonas</h2>
         <figure>
-          <img src="" alt="Manaus - Amazon River" />
+          <img src="images/amazon-river.webp" alt="Manaus - Amazon River" />
           <figcaption>Amazon River from above</figcaption>
         </figure>
       </section>
-      <section>
+      <section class="certificates">
         <h2>Web and Computer Programming Certificate</h2>
+        <article class="filter-buttons">
+          <button id="all">All</button>
+          <button id="CSE">CSE</button>
+          <button id="WDD">WDD</button>
+        </article>
+        <article id="courses"></article>
       </section>
     </main>
     <footer>

@@ -5,8 +5,11 @@ header {
   text-align: center;
   background-color: #1f487e;
   color: #fff;
+  display: flex;
+  flex-wrap: wrap;
   h1 {
     padding: 2rem;
+    width: calc(100vw - 10rem);
     margin: 0;
   }
   #menu {
@@ -24,20 +27,19 @@ header {
   }
   nav {
     width: 100%;
-	display: none;
+    display: none;
     background-color: #1d3461;
     a {
       color: #fff;
       text-decoration: none;
     }
-	li {
-	    padding: 1.5rem;
-	}
+    li {
+      padding: 1.5rem;
+    }
     &.show {
-	    display: block
-	}
+      display: block;
+    }
   }
-    
 }
 
 main {
@@ -74,8 +76,12 @@ footer {
   }
 
   header {
+    display: block;
     #menu {
       display: none;
     }
+	nav {
+	    display: block;
+	}
   }
 }

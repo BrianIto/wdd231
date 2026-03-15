@@ -1,0 +1,39 @@
+@media (min-width: 40em) {
+  .navigation {
+    display: flex;
+  }
+
+
+header nav li {
+  padding: 0 2rem;
+}
+
+	main section:first-of-type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+  header {
+	  width: 100%;
+    display: block;
+  }
+  header h1 img {
+      width: 150px;
+  }
+  header #menu {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+
+
+  main .certificates .filter-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  #courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

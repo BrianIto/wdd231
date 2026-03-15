@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link href="styles/style.css" rel="stylesheet" />
+		<link href="styles/normalize.css" rel="stylesheet" />
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/hamb.js" defer></script>
     <script src="scripts/courseslist.js" defer></script>
@@ -23,7 +24,7 @@
   <body>
     <header>
       <h1>
-        <img src="images/profile.webp" alt="profile picture" />Brian Ito 👋 | wdd231
+       Brian Ito 👋 | wdd231
       </h1>
       <a id="menu"></a>
       <nav>
@@ -32,43 +33,42 @@
             <a class="active" href="/">Home</a>
           </li>
           <li>
-            <a href="#">Chamber</a>
+            <a href="#">Chamber Project</a>
           </li>
           <li>
-            <a href="https://github.com/BrianIto">GitHub Profile</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/brian-ito/"
-              >LinkedIn Profile</a
-            >
+            <a href="#">Final Project</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
+	<h1>Home</h1>
       <section>
-        <h2>Course Work</h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-      <section>
-        <h2>Manaus, Amazonas</h2>
-        <figure>
-          <img src="images/amazon-river.webp" alt="Manaus - Amazon River" />
-          <figcaption>Amazon River from above</figcaption>
-        </figure>
+				<article>
+        <h2>About me</h2>
+					<p>
+						I’m Brian Ito, a frontend developer focused on building thoughtful, user-centered web applications. I enjoy turning complex ideas into simple, intuitive interfaces and tools that people actually enjoy using. My work often explores modern web technologies and emerging ecosystems like Web3, where I like experimenting with new ways software can be designed and experienced. I’m especially motivated by creating products from scratch—designing the idea, building the interface, and refining the experience until it feels clean and purposeful.</p>
+					<p>Beyond coding, I value balance between my professional work and personal life. As a father, spending meaningful time with my daughter is one of my greatest priorities, and it shapes how I think about work and productivity. I’m also an active member of my church community, which influences my values of service, integrity, and continual improvement. Whether I’m developing a new tool, contributing to a project, or learning a new technology, my goal is always the same: build things that are useful, well-crafted, and meaningful. 🚀</p>
+				</article>
+				<article>
+
+        <h2>Student Photo</h2>
+
+					<picture>
+ <img src="images/profile.webp" alt="profile picture" />
+					</picture>
+				</article>
       </section>
       <section class="certificates">
-        <h2>Web and Computer Programming Certificate</h2>
-        <article class="filter-buttons">
+				<article>
+        <h2>Web Certificate Courses</h2>
+        <div class="filter-buttons">
           <button id="all">All</button>
           <button id="CSE">CSE</button>
           <button id="WDD">WDD</button>
-        </article>
-        <article id="courses"></article>
+        </div>
+        <div id="courses"></div>
+	</article>
       </section>
     </main>
     <footer>

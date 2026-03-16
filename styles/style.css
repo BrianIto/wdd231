@@ -14,6 +14,7 @@ header {
 article {
 	border: 1px solid #ccc;
 	border-radius: 0.5rem;
+	margin-bottom: 2rem;
 }
   article  p {
 	  padding: 0.5rem 3rem;
@@ -85,6 +86,8 @@ header nav a {
   opacity: 0.66;
   padding: 1.5rem;
   transition: all 0.2s ease-in-out;
+	width: 100%;
+	display: block;
 }
 
 header nav a:hover {
@@ -94,10 +97,6 @@ header nav a:hover {
 header nav a.active {
   opacity: 1;
   background-color: #1f487e;
-}
-header nav a {
-	width: 100%;
-	display: block;
 }
 
 
@@ -112,6 +111,7 @@ main {
   flex-direction: column;
   align-items:center;
   max-width: 1200px;
+  margin: 2rem;
 }
 
 
@@ -176,14 +176,6 @@ footer {
 figcaption {
   font-size: 12px;
   text-align: center;
-}
-
-main {
-	margin: 2rem;
-}
-
-article {
-	margin-bottom: 2rem;
 }
 
 

@@ -22,7 +22,8 @@ getDirectoriesFromFile().then((directories) => {
 		const website = document.createElement("a");
 
 		image.src = directory.imageFile;
-		image.alt = `${directory.name} logo`;
+		image.loading = "lazy";
+		image.alt = `${directory.companyName} logo`;
 		name.textContent = directory.companyName;
 		address.textContent = `Address: ${directory.address}`;
 		description.textContent = directory.description;

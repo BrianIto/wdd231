@@ -1,8 +1,55 @@
 @media (min-width: 700px) {
-	header h1 {
-		width: 100%;
+
+	header {
+		flex-direction: row;
+		align-items: center;
 	}
-	
+	header > div {
+		flex: 1;
+		align-items: center
+	}
+	nav {
+  		display: flex;
+		width: fit-content;
+		background: transparent;
+		color: #000;
+	}
+
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		display: flex;
+		align-items: center;
+		border: none;
+	}
+
+	nav ul li a {
+		color: #000;
+		background: transparent;
+		
+	}
+
+	li button {
+		background: transparent;
+		border: none;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#buttons {
+		display: none;
+	}
+
+	.active {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid #000;
+	}
+
 	footer {
 		display: flex;
 		justify-content: space-between;

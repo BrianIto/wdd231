@@ -4,9 +4,8 @@ const lastModifiedElement = document.getElementById("last-modified");
 lastModifiedElement.textContent = `Last Modified: ${lastModification}`;
 
 async function getDirectoriesFromFile() {
-	const response = await fetch("scripts/members.json");
+	const response = await fetch("data/members.json");
 	const data = await response.json();
-	console.log(data);
 	return data;
 }
 

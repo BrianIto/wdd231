@@ -9,7 +9,7 @@ footer {
 	padding: 2rem;
 }
 
-main content img {
+main #content img {
 	width: 100%;
 }
 
@@ -27,57 +27,57 @@ header {
 	box-shadow: 0 8px 10px #00000022;
 }
 
-content {
+#content {
 	text-align: center;
 }
 
-content #directory-list {
+#content #directory-list {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 
 }
 
-content #directory-list.list-view {
+#content #directory-list.list-view {
 	display: block;
 }
 
 
-	content .list-view p {
+	#content .list-view p {
 		display: none;
 	}
 
-	content .list-view div {
+	#content .list-view div {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
 	}
 
-	content .list-view div h2 {
+	#content .list-view div h2 {
 		text-align: left;
 		flex: 1;
 	}
 
-	content .list-view div img {
+	#content .list-view div img {
 		width: 100px;
 		max-height: 100px;
 	}
 
-content ul {
+#content ul {
 	list-style: none;
 	padding: 0;
 }
 
-content div {
+#content div {
 	padding: 2rem;
 	border-bottom: 1px solid #ccc;
 }
 
-content div:last-of-type {
+#content div:last-of-type {
 	border-bottom: none;
 }
 
 
-content div img {
+#content div img {
 	width: 200px;
 	max-height: 200px;
 }

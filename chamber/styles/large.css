@@ -13,12 +13,12 @@
 		text-align: right;
 	}
 
-	content #directory-list {
+	#content #directory-list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 	}
 
-	content #directory-list.list-view {
+	#content #directory-list.list-view {
 		display: block;
 	}
 

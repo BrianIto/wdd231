@@ -13,25 +13,160 @@ main content img {
 	width: 100%;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
 
-header nav {
+header {
+	display: flex;
+	position: relative;
+	z-index: 999;
+	box-shadow: 0 8px 10px #00000022;
+}
+
+content {
+	text-align: center;
+}
+
+content #directory-list {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+
+}
+
+content #directory-list.list-view {
+	display: block;
+}
+
+
+	content .list-view p {
+		display: none;
+	}
+
+	content .list-view div {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	content .list-view div h2 {
+		text-align: left;
+		flex: 1;
+	}
+
+	content .list-view div img {
+		width: 100px;
+		max-height: 100px;
+	}
+
+content ul {
+	list-style: none;
+	padding: 0;
+}
+
+content div {
+	padding: 2rem;
+	border-bottom: 1px solid #ccc;
+}
+
+content div:last-of-type {
+	border-bottom: none;
+}
+
+
+content div img {
+	width: 200px;
+	max-height: 200px;
+}
+
+header h1 {
+	display: flex;
+	align-items: center;
+
+	font-size: 1.15rem;
+	width: 75%;
+}
+
+header h1 img {
+	width: 4.5rem;
+	height: 4.5rem;
+}
+
+nav {
   width: 100%;
   display: none;
   background-color: #1d3461;
 }
 
 
-header nav.show {
+ nav.show {
   display: block;
 }
 
-header #menu {
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li {
+	padding: 1rem;
+	border-bottom: 1px solid #00000022;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #FFFFFFF0;
+}
+
+#dark-mode img {
+	width: 32px;
+	height: 32px;
+}
+
+#buttons {
+	display: flex;
+	gap: 5px;
+	padding-right: 0.75rem;
+	align-items: center;
+}
+
+#buttons button {
+	background: none;
+	border: none;
+}
+
+ #menu {
   font-size: 3rem;
   display: block;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
+  margin-top: -0.75rem;
+  padding: 0rem 0.75rem;
 }
 
 header #menu::before {
   content: "≡";
+}
+
+footer > section:nth-of-type(2) {
+	  display: flex;
+	  justify-content: center;
+	  gap: 32px;
+	  margin: 2rem 0;
+}
+
+footer a {
+	background-color: #00000022;
+	border-radius: 36px;
+	width: 64px;
+	height:64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer img {
+	width: 32px;
+	height: 32px;
 }

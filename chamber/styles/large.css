@@ -1,0 +1,26 @@
+@media (min-width: 700px) {
+	header h1 {
+		width: 100%;
+	}
+	
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	footer section:last-of-type {
+		text-align: right;
+	}
+
+	content #directory-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	content #directory-list.list-view {
+		display: block;
+	}
+
+
+}

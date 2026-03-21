@@ -11,48 +11,65 @@
     <meta name="og:image" content="https://brianito.github.io/wdd231/chamber/images/teatro.webp">
     <meta name="og:url" content="https://www.manaus.com.br/chamber/directory.html">
     <title>Chamber Directory</title>
+    <link rel="icon" sizes="48x48" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link ref="icon" type="image/png" href="images/favicon-96x96.png">
     <script src="scripts/hamb.js" defer></script>
     <script src="scripts/directory.js" defer></script>
   </head>
   <body>
     <main>
       <header>
-        <h1>Manaus Chamber of Commerce</h1>
-        <a id="menu"></a>
-        <nav>
-          <ul class="navigation">
-            <li>
-              <a class="active" href="/">Home</a>
-            </li>
-            <li>
-              <a href="#">Directory</a>
-            </li>
-            <li>
-              <a href="#">Join</a>
-            </li>
-            <li>
-              <a href="#">Discover</a>
-            </li>
-          </ul>
-        </nav>
+        <h1><img src="images/chamber-logo.webp" alt="Chamber Logo">Manaus Chamber of Commerce</h1>
         <div id="buttons">
-          <button id="dark-mode"></button>
+          <a id="menu"></a>
+          <button id="dark-mode">
+            <img src="images/dark-mode.svg" alt="Dark Mode Toggle">
+          </button>
         </div>
       </header>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a class="active" href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">Directory</a>
+          </li>
+          <li>
+            <a href="#">Join</a>
+          </li>
+          <li>
+            <a href="#">Discover</a>
+          </li>
+        </ul>
+      </nav>
       <content>
-        <img src="images/teatro.webp" alt="Teatro Amazonas">
+        <h1>Directory</h1>
+        <button id="grid-view">View as Grid</button>
+        <button id="list-view">View as List</button>
+        <div id="directory-list">
+        </div>
       </content>
       <footer>
-        <h3>Manaus Chamber of Commerce </h3>
         <section>
+          <h3>Manaus Chamber of Commerce </h3>
           <p>R. Tokio, 46</p>
           <p>Parque 10 de Novembro</p>
           <p>Manaus - AM</p>
           <p>contact@brianito.com</p>
+        </section>
+        <section>
+          <a href="https://www.linkedin.com/in/brian-ito/" target="_blank" rel="noopener">
+            <img src="images/linkedin.svg" alt="Linkedin Profile">
+          </a>
+          <a href="https://www.youtube.com/@brianito" target="_blank" rel="noopener">
+            <img src="images/youtube.svg" alt="YouTube Channel">
+          </a>
+          <a href="https://x.com/BrianIto_" target="_blank" rel="noopener">
+            <img src="images/x.svg" alt="X Account">
+          </a>
         </section>
         <section>
           <p>WDD231 - Class Project</p>

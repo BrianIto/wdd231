@@ -11,32 +11,53 @@
     <meta name="og:image" content="https://www.manaus.com.br/images/logo.png">
     <meta name="og:url" content="https://www.manaus.com.br/chamber/directory.html">
     <title>Chamber Directory</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/small.css">
+    <link rel="stylesheet" href="../styles/large.css">
+    <script src="../scripts/hamb.js" defer></script>
   </head>
   <body>
     <main>
       <header>
         <h1>Manaus Chamber of Commerce</h1>
-        <a href="#" class="header-option">
-          Home
-        </a>
-        <a href="#" class="header-option">
-          Directory 
-        </a>
-        <a href="#" class="header-option">
-          Join 
-        </a>
-        <a href="#" class="header-option">
-          Discover 
-        </a>
+        <a id="menu"></a>
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a class="active" href="/">Home</a>
+            </li>
+            <li>
+              <a href="#">Directory</a>
+            </li>
+            <li>
+              <a href="#">Join</a>
+            </li>
+            <li>
+              <a href="#">Discover</a>
+            </li>
+          </ul>
+        </nav>
         <div id="buttons">
           <button id="dark-mode"></button>
-          <div id="menu">
-          </div>
         </div>
       </header>
       <content>
+        <img src="../images/teatro.webp" alt="Teatro Amazonas">
       </content>
       <footer>
+        <h3>Manaus Chamber of Commerce </h3>
+        <section>
+          <p>R. Tokio, 46</p>
+          <p>Parque 10 de Novembro</p>
+          <p>Manaus - AM</p>
+          <p>contact@brianito.com</p>
+        </section>
+        <section>
+          <p>WDD231 - Class Project</p>
+          <p>Brian Ito</p>
+          <p>&copy 2026 All rights reserved</p>
+          <p id="last-modified">Last modification: </p>
+        </section>
       </footer>
     </main>
   </body>

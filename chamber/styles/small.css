@@ -130,7 +130,7 @@ nav ul li a {
 }
 
 
-#dark-mode img {
+#dark-mode img, #dark-mode-resp img {
 	width: 32px;
 	height: 32px;
 }

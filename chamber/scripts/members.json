@@ -1,0 +1,93 @@
+[
+	{
+		"companyName": "Amazônia Turismo & Expedições",
+		"address": "Av. Eduardo Ribeiro, 1020, Centro, Manaus - AM, 69010-001",
+		"phone": "+55 (92) 3300-1100",
+		"website": "https://amazoniaturismo.example.com.br",
+		"imageFile": "/images/company-1.webp",
+		"membershipLevel": 3,
+		"industry": "Turismo",
+		"description": "Operadora especializada em passeios pela floresta amazônica, focada em ecoturismo e experiências sustentáveis.",
+		"email": "contato@amazoniaturismo.example.com.br",
+		"founded": 2010,
+		"employees": 28
+	},
+	{
+		"companyName": "Cacau do Rio Doce",
+		"address": "Rua 10 de Julho, 455, Centro, Manaus - AM, 69010-060",
+		"phone": "+55 (92) 3200-4521",
+		"website": "https://cacaudoriodoce.example.com.br",
+		"imageFile": "/images/company-2.webp",
+		"membershipLevel": 2,
+		"industry": "Alimentos & Bebidas",
+		"description": "Chocolateria artesanal que utiliza cacau de produtores ribeirinhos da região amazônica.",
+		"email": "falemconosco@cacaudoriodoce.example.com.br",
+		"founded": 2016,
+		"employees": 15
+	},
+	{
+		"companyName": "Manaus Tech Hub",
+		"address": "Av. Djalma Batista, 3000, Torre Norte, Chapada, Manaus - AM, 69050-010",
+		"phone": "+55 (92) 3600-7800",
+		"imageFile": "/images/company-3.webp",
+		"website": "https://manaustechhub.example.com.br",
+		"membershipLevel": 3,
+		"industry": "Tecnologia & Inovação",
+		"description": "Coworking e aceleradora de startups com foco em soluções para logística, indústria e meio ambiente.",
+		"email": "info@manaustechhub.example.com.br",
+		"founded": 2014,
+		"employees": 34
+	},
+	{
+		"companyName": "Pousada Rio Negro Verde",
+		"address": "Estrada da Ponta Negra, km 10, Ponta Negra, Manaus - AM, 69037-000",
+		"phone": "+55 (92) 3344-9090",
+		"website": "https://rionegraverde.example.com.br",
+		"imageFile": "/images/company-4.webp",
+		"membershipLevel": 1,
+		"industry": "Hotelaria",
+		"description": "Pousada à beira do Rio Negro com foco em turismo de natureza e observação de fauna e flora.",
+		"email": "reservas@rionegraverde.example.com.br",
+		"founded": 2008,
+		"employees": 22
+	},
+	{
+		"companyName": "Sabor da Floresta Restaurante",
+		"address": "Av. Constantino Nery, 1800, São Geraldo, Manaus - AM, 69050-001",
+		"phone": "+55 (92) 3636-1212",
+		"website": "https://sabordafloresta.example.com.br",
+		"imageFile": "/images/company-5.webp",
+		"membershipLevel": 2,
+		"industry": "Gastronomia",
+		"description": "Restaurante de culinária regional amazônica com pratos à base de peixes e frutas típicas.",
+		"email": "contato@sabordafloresta.example.com.br",
+		"founded": 2012,
+		"employees": 26
+	},
+	{
+		"companyName": "NorteVerde Logística",
+		"address": "Distrito Industrial I, Rua Rio Jutaí, 250, Manaus - AM, 69075-830",
+		"phone": "+55 (92) 3303-8899",
+		"website": "https://norteverdelogistica.example.com.br",
+		"imageFile": "/images/company-6.webp",
+		"membershipLevel": 1,
+		"industry": "Logística & Transporte",
+		"description": "Operadora logística especializada em transporte fluvial e integração com o Polo Industrial de Manaus.",
+		"email": "comercial@norteverdelogistica.example.com.br",
+		"founded": 2005,
+		"employees": 58
+	},
+	{
+		"companyName": "Instituto Amazônia Sustentável",
+		"address": "Rua Recife, 890, Adrianópolis, Manaus - AM, 69057-060",
+		"phone": "+55 (92) 3656-4400",
+		"website": "https://institutoamazonia.example.org.br",
+		"imageFile": "/images/company-7.webp",
+		"membershipLevel": 3,
+		"industry": "Organização Social",
+		"description": "Instituto sem fins lucrativos dedicado a projetos de educação ambiental e desenvolvimento comunitário.",
+		"email": "contato@institutoamazonia.example.org.br",
+		"founded": 2009,
+		"employees": 19
+	}
+]

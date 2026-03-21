@@ -8,7 +8,7 @@ header nav li {
   padding: 0 2rem;
 }
 
-	main section:first-of-type {
+	main article:first-of-type {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;

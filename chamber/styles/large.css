@@ -1,4 +1,15 @@
-@media (min-width: 700px) {
+@media(min-width: 675px) {
+
+	header h1 {
+		width: 100%;
+	}
+	#content #directory-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 850px) {
 
 	header {
 		flex-direction: row;
@@ -30,6 +41,10 @@
 		background: transparent;
 		
 	}
+
+ul li:last-of-type {
+	display: flex;
+}
 
 	li button {
 		background: transparent;

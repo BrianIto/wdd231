@@ -10,6 +10,7 @@
 		"description": "Operadora especializada em passeios pela floresta amazônica, focada em ecoturismo e experiências sustentáveis.",
 		"email": "contato@amazoniaturismo.example.com.br",
 		"founded": 2010,
+		"membershipLevel": "gold",
 		"employees": 28
 	},
 	{
@@ -23,6 +24,7 @@
 		"description": "Chocolateria artesanal que utiliza cacau de produtores ribeirinhos da região amazônica.",
 		"email": "falemconosco@cacaudoriodoce.example.com.br",
 		"founded": 2016,
+		"membershipLevel": "silver",
 		"employees": 15
 	},
 	{
@@ -35,6 +37,7 @@
 		"industry": "Tecnologia & Inovação",
 		"description": "Coworking e aceleradora de startups com foco em soluções para logística, indústria e meio ambiente.",
 		"email": "info@manaustechhub.example.com.br",
+		"membershipLevel": "bronze",
 		"founded": 2014,
 		"employees": 34
 	},
@@ -46,6 +49,7 @@
 		"imageFile": "images/company-4.webp",
 		"membershipLevel": 1,
 		"industry": "Hotelaria",
+		"membershipLevel": "bronze",
 		"description": "Pousada à beira do Rio Negro com foco em turismo de natureza e observação de fauna e flora.",
 		"email": "reservas@rionegraverde.example.com.br",
 		"founded": 2008,
@@ -62,6 +66,7 @@
 		"description": "Restaurante de culinária regional amazônica com pratos à base de peixes e frutas típicas.",
 		"email": "contato@sabordafloresta.example.com.br",
 		"founded": 2012,
+		"membershipLevel": "gold",
 		"employees": 26
 	},
 	{
@@ -72,6 +77,8 @@
 		"imageFile": "images/company-6.webp",
 		"membershipLevel": 1,
 		"industry": "Logística & Transporte",
+		"membershipLevel": "gold",
+
 		"description": "Operadora logística especializada em transporte fluvial e integração com o Polo Industrial de Manaus.",
 		"email": "comercial@norteverdelogistica.example.com.br",
 		"founded": 2005,
@@ -83,6 +90,8 @@
 		"phone": "+55 (92) 3656-4400",
 		"website": "https://institutoamazonia.example.org.br",
 		"imageFile": "images/company-7.webp",
+
+		"membershipLevel": "silver",
 		"membershipLevel": 3,
 		"industry": "Organização Social",
 		"description": "Instituto sem fins lucrativos dedicado a projetos de educação ambiental e desenvolvimento comunitário.",

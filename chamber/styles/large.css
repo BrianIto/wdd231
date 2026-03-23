@@ -8,6 +8,11 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	#businesses div img {
+		width: 100px;
+	}
+
+
 }
 
 

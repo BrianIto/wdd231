@@ -7,63 +7,107 @@
     <meta name="description" content="A directory of the chamber of commerce for the city of Manaus in Amazonas.">
     <meta name="title" content="Chamber of Commerce Directory">
     <meta property="og:title" content="Chamber of Commerce from Manaus, Amazonas - Directory Page">
-    <meta property="og:description" content="A directory of the chamber of commerce for the city of Manaus. Find local businesses and services to support the growth and development of the community.">
+    <meta property="og:description"
+		content="A directory of the chamber of commerce for the city of Manaus. Find local businesses and services to support the growth and development of the community.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://brianito.github.io/wdd231/chamber/images/teatro.webp">
     <meta property="og:url" content="https://brianito.github.io/wdd231/chamber/">
     <title>Directory </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+		rel="stylesheet" />
     <link rel="icon" sizes="48x48" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/weather.mjs" type="module"></script>
     <script src="scripts/hamb.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.mjs" type="module" ></script>
   </head>
   <body>
     <main>
       <header>
-				<div>
-        <h1><img src="images/chamber-logo.webp" alt="Chamber Logo">Manaus Chamber of Commerce</h1>
-        <div id="buttons">
-
-          <a id="menu"></a>
-
-          <button id="dark-mode">
-            <img src="images/dark-mode.svg" alt="Dark Mode Toggle">
-          </button>
-	</div>
+        <div>
+          <h1><img src="images/chamber-logo.webp" alt="Chamber Logo">Manaus Chamber of Commerce
+          </h1>
+          <div id="buttons">
+            <a id="menu"></a>
+            <button id="dark-mode">
+              <img src="images/dark-mode.svg" alt="Dark Mode Toggle">
+            </button>
+          </div>
         </div>
-
-      <nav>
-        <ul class="navigation">
-          <li>
-            <a class="active" href="#">Home</a>
-          </li>
-          <li>
-            <a href="/chamber/directory.html">Directory</a>
-          </li>
-          <li>
-            <a href="#">Join</a>
-          </li>
-          <li>
-            <a href="#">Discover</a>
-          </li>
-						<li>
-
-          <button id="dark-mode-resp">
-            <img src="images/dark-mode.svg" alt="Dark Mode Toggle">
-          </button>
-						</li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="navigation">
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+            <li>
+              <a href="/chamber/directory.html">Directory</a>
+            </li>
+            <li>
+              <a href="#">Join</a>
+            </li>
+            <li>
+              <a href="#">Discover</a>
+            </li>
+            <li>
+              <button id="dark-mode-resp">
+                <img src="images/dark-mode.svg" alt="Dark Mode Toggle">
+              </button>
+            </li>
+          </ul>
+        </nav>
       </header>
       <section id="content">
+        <picture>
+          <source media="(max-width: 600px)" srcset="images/teatro-small.webp">
+          <img src="images/teatro.webp" alt="Teatro Amazonas">
+        </picture>
+        <section>
+          <h2>Home
+          </h2>
+          <div class="grid">
+            <div>
+              <h3>Events</h3>
+            </div>
+            <div>
+              <h3>Current Weather</h3>
+              <div id="weather"></div>
+            </div>
+            <div>
+              <h3>Weather Forecast</h3>
+              <div id="forecast"></div>
+            </div>
+          </div>
+          <div id="businesses">
+            <div class="business-card">
+              <h3>Amazon Eco Tours</h3>
+              <p>Experience the Amazon Rainforest with our eco-friendly tours. Explore the diverse flora and fauna while supporting sustainable tourism.</p>
+              <div class="flex">
+                <img src="images/amazon-eco-tours.webp" alt="Amazon Eco Tours">
+                <div>
+                  <p><b>Phone:</b> +55 92 99999-9999</p>
+                  <p><b>Email:</b> abc@teste.com</p>
+                  <p><b>URL:</b> mybusiness.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="business-card">
+              <h3>Amazon Eco Tours</h3>
+              <p>Experience the Amazon Rainforest with our eco-friendly tours. Explore the diverse flora and fauna while supporting sustainable tourism.</p>
+              <div class="flex">
+                <img src="images/amazon-eco-tours.webp" alt="Amazon Eco Tours">
+                <div>
+                  <p><b>Phone:</b> +55 92 99999-9999</p>
+                  <p><b>Email:</b> abc@teste.com</p>
+                  <p><b>URL:</b> mybusiness.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <footer>
         <section>

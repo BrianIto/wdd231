@@ -3,7 +3,7 @@ const lastModifiedElement = document.getElementById("last-modified");
 
 lastModifiedElement.textContent = `Last Modified: ${lastModification}`;
 
-async function getDirectoriesFromFile() {
+export async function getDirectoriesFromFile() {
 	const response = await fetch("data/members.json");
 	const data = await response.json();
 	return data;
@@ -36,7 +36,7 @@ getDirectoriesFromFile().then((directories) => {
 		listItem.appendChild(address);
 		listItem.appendChild(phone);
 		listItem.appendChild(website);
-		directoryList.appendChild(listItem);
+		if (directoryList) directoryList.appendChild(listItem);
 	}
 });
 
@@ -44,17 +44,25 @@ const listButton = document.getElementById("list-view");
 const gridButton = document.getElementById("grid-view");
 
 // Initial grid-view
-gridButton.setAttribute("disabled", "true");
-listButton.removeAttribute("disabled");
+if (gridButton) gridButton.setAttribute("disabled", "true");
+if (listButton) listButton.removeAttribute("disabled");
 
-listButton.addEventListener("click", () => {
-	document.getElementById("directory-list").classList.add("list-view");
-	listButton.setAttribute("disabled", "true");
-	gridButton.removeAttribute("disabled");
-});
+if (listButton) {
+	listButton.addEventListener("click", () => {
+		document.getElementById("directory-list").classList.add(
+			"list-view",
+		);
+		listButton.setAttribute("disabled", "true");
+		gridButton.removeAttribute("disabled");
+	});
+}
 
-gridButton.addEventListener("click", () => {
-	document.getElementById("directory-list").classList.remove("list-view");
-	gridButton.setAttribute("disabled", "true");
-	listButton.removeAttribute("disabled");
-});
+if (gridButton) {
+	gridButton.addEventListener("click", () => {
+		document.getElementById("directory-list").classList.remove(
+			"list-view",
+		);
+		gridButton.setAttribute("disabled", "true");
+		listButton.removeAttribute("disabled");
+	});
+}

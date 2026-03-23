@@ -13,7 +13,7 @@ const api_key = "07d23be1a56a219b5e18ecb9dea7792e";
  * @return {Promise<Array<CityData>>} A promise that resolves to an object containing the latitude and longitude of the city.
  */
 async function getLatLong(city) {
-	const URL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key}`;
+	const URL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key}`;
 	const response = await fetch(URL);
 	const data = await response.json();
 	return data;

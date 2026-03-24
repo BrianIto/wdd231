@@ -41,13 +41,13 @@
         <nav>
           <ul class="navigation">
             <li>
-              <a class="active" href="#">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
               <a href="/chamber/directory.html">Directory</a>
             </li>
             <li>
-              <a href="/chamber/join.html">Join</a>
+              <a class="active" href="/chamber/join.html">Join</a>
             </li>
             <li>
               <a href="#">Discover</a>
@@ -61,29 +61,38 @@
         </nav>
       </header>
       <section id="content">
-        <picture>
-          <source media="(max-width: 600px)" srcset="images/teatro-small.webp">
-          <img src="images/teatro.webp" alt="Teatro Amazonas">
-        </picture>
-        <section>
-          <h2>Home
-          </h2>
-          <div class="grid">
+        <form method="get" action="thankyou.html">
+          <h2>Join us</h2>
+          <div class="flex">
             <div>
-              <h3>Events</h3>
+              <label for="first_name">First Name:</label>
+              <input placeholder="Eg: John" type="text" id="first_name" name="first_name" autocomplete="given-name" required>
             </div>
             <div>
-              <h3>Current Weather</h3>
-              <div id="weather"></div>
-            </div>
-            <div>
-              <h3>Weather Forecast</h3>
-              <div id="forecast"></div>
+              <label  for="last_name">Last Name:</label>
+              <input placeholder="Eg: Doe" type="text" id="last_name" name="last_name" autocomplete="family-name" required>
             </div>
           </div>
-          <div id="businesses">
-          </div>
-        </section>
+          <label for="organization_title">Organization Title:</label>
+          <input  placeholder="Your title in the company, eg: CEO" type="text" id="organization_title" name="organization_title" autocomplete="organization-title" required>
+          <label for="business">Email Address:</label>
+          <input placeholder="johndoe@mail.com" type="email" id="email" name="email" autocomplete="email" required>
+          <label for="business">Mobile Phone:</label>
+          <input placeholder="+1 999 9999 9999" type="tel" id="phone" name="phone" autocomplete="tel" required>
+          <label for="business">Business Organization/Name:</label>
+          <input placeholder="Name of your company, eg: Google" type="text" id="business" name="business" required>
+          <label for="level">Membership Level</label>
+          <select name="level" id="level" required>
+            <option value="" disabled selected>Select a membership level</option>
+            <option value="np">Non-Profit - FREE</option>
+            <option value="premium">Bronze - $250/year</option>
+            <option value="elite">Silver - $500/year</option>
+            <option value="corporate">Gold - $1000/year</option>
+          </select>
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="Briefly describe your business and what you do." rows="4" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
       </section>
       <footer>
         <section>

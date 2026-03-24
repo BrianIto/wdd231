@@ -235,3 +235,74 @@ footer img {
 	width: 32px;
 	height: 32px;
 }
+
+form {
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	width: 400px;
+	border: 1px solid #f0f0f0;
+	padding: 2rem;
+	padding-top: 2.25rem;
+	box-shadow: 0 4px 20px #00000012;
+	border-radius: 24px;
+	margin: 4rem auto 4rem auto;
+	font-size: 14px;
+}
+
+#content form .flex {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	border: none;
+	padding: 0;
+}
+
+#content form .flex div {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	padding: 0;
+	border: none;
+	align-items: flex-start;
+}
+
+#content form .flex input {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+form label {
+	text-align: left;
+}
+
+form input, select, textarea {
+	margin-bottom: 1rem;
+}
+
+form input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+	padding: 0.5rem;
+	margin-top: .33rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+form input[type="submit"] {
+	margin-top: 1rem;
+	background-color: #1d3461;
+	color: #fff;
+	border: none;
+	border-radius: 24px;
+	cursor: pointer;
+	font-weight: 600;
+	box-shadow: 0 4px 6px #00000022;
+	padding: 0.75rem 1.5rem;
+	transition: all .2s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+	background-color: #1d3461f0;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 8px #00000033;
+}
+

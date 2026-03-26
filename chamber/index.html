@@ -40,7 +40,7 @@
         </div>
         <nav>
           <ul class="navigation">
-            <li>
+            <li class="li-active">
               <a class="active" href="#">Home</a>
             </li>
             <li>
@@ -60,11 +60,16 @@
           </ul>
         </nav>
       </header>
-      <section id="content">
-        <picture>
-          <source media="(max-width: 600px)" srcset="images/teatro-small.webp">
-          <img src="images/teatro.webp" alt="Teatro Amazonas">
-        </picture>
+      <section id="content" >
+        <article class="relative">
+          <picture>
+            <source media="(max-width: 600px)" srcset="images/teatro-small.webp">
+            <img src="images/teatro.webp" alt="Teatro Amazonas">
+          </picture>
+          <a href="/chamber/directory.html" class="cta-link">
+            <button id="cta-button">See the Directory Of Members</button>
+          </a>
+        </article>
         <section>
           <h2>Home
           </h2>

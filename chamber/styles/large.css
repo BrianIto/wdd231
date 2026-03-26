@@ -13,6 +13,7 @@
 	}
 
 
+
 }
 
 
@@ -134,6 +135,9 @@ ul li:last-of-type {
 
 @media (min-width: 1100px) {
 
+nav ul li:first-of-type {
+	border-top: none;
+}
 	#content #businesses {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

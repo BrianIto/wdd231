@@ -14,6 +14,16 @@ main #content img {
 	width: 100%;
 }
 
+.relative {
+	position: relative;
+}
+
+.required::after {
+	content: "*";
+	color: red;
+	margin-left: 0.125rem;
+}
+
 .hidden {
 	display: none;
 }
@@ -23,6 +33,25 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100vh;
+}
+
+#cta-button {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 24px;
+	background: #fff;
+	box-shadow: 0 4px 6px #00000022;
+	font-weight: 500;
+	transition: all .2s ease-in-out;
+	cursor:pointer;
+}
+
+#cta-button:hover {
+	box-shadow: 0 6px 8px #00000033;
+	transform: translateY(-2px);
 }
 
 #content #weather div {
@@ -169,11 +198,16 @@ nav {
 nav ul {
 	list-style: none;
 	padding: 0;
+	margin: 0;
 }
 
 nav ul li {
 	padding: 1rem;
 	border-bottom: 1px solid #00000022;
+}
+
+nav ul li:first-of-type {
+	border-top: 1px solid #00000022;
 }
 
 nav ul li a {

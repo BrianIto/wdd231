@@ -14,6 +14,10 @@ main #content img {
 	width: 100%;
 }
 
+.hidden {
+	display: none;
+}
+
 main {
 	display: flex;
 	flex-direction: column;
@@ -51,10 +55,14 @@ header > div {
 	text-align: center;
 }
 
+.card {
+	animation: fadeIn 0.5s ease-in-out;
+}
 
 .business-card div {
 	padding: 0 !important;
 }
+
 
 .business-card > .flex > div {
 	text-align: left;
@@ -246,8 +254,8 @@ form {
 	padding-top: 2.25rem;
 	box-shadow: 0 4px 20px #00000012;
 	border-radius: 24px;
-	margin: 4rem auto 4rem auto;
-	font-size: 14px;
+	margin: 4rem 0 4rem 0;
+	font-size: 13px;
 }
 
 #content form .flex {
@@ -256,6 +264,75 @@ form {
 	align-items: center;
 	border: none;
 	padding: 0;
+}
+
+.center-align {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+}
+
+form h3 {
+	font-weight: 500;
+	margin: 0;
+	display: flex;
+	gap: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+
+form h3 div {
+	position: relative;
+	padding: 0 !important;
+	max-height: 1px;
+	margin-top: 0.5rem;
+	flex: 1;
+	background-color: #ccc;
+}
+
+.card {
+	border: 1px solid #ccc;
+	padding: 1rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px #00000022;
+	min-width: 250px;
+}
+
+.gold {
+	background-color: #Fc0;
+}
+
+.silver {
+	background-color: #C0C0C0;
+}
+
+.bronze {
+	background-color: #cd7f12;
+	color: #fff;
+}
+
+.np {
+	background-color: #1d346144;
+}
+
+.card button {
+	background-color: #1d3461;
+	color: #fff;
+	border: none;
+	border-radius: 24px;
+	cursor: pointer;
+	font-weight: 600;
+	width: 100%;
+	box-shadow: 0 4px 6px #00000022;
+	padding: 0.5rem 1rem;
+	transition: all .2s ease-in-out;
+}
+
+#cards-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem;
+	justify-content: center;
 }
 
 #content form .flex div {
@@ -306,3 +383,14 @@ form input[type="submit"]:hover {
 	box-shadow: 0 6px 8px #00000033;
 }
 
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

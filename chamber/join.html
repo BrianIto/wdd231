@@ -60,9 +60,12 @@
           </ul>
         </nav>
       </header>
-      <section id="content">
+      <section id="content" class="flex center-align">
         <form method="get" action="thankyou.html">
           <h2>Join us</h2>
+          <h3>Personal Information
+            <div></div>
+          </h3>
           <div class="flex">
             <div>
               <label for="first_name">First Name:</label>
@@ -73,14 +76,17 @@
               <input placeholder="Eg: Doe" type="text" id="last_name" name="last_name" autocomplete="family-name" required>
             </div>
           </div>
-          <label for="organization_title">Organization Title:</label>
-          <input  placeholder="Your title in the company, eg: CEO" type="text" id="organization_title" name="organization_title" autocomplete="organization-title" required>
           <label for="business">Email Address:</label>
           <input placeholder="johndoe@mail.com" type="email" id="email" name="email" autocomplete="email" required>
           <label for="business">Mobile Phone:</label>
           <input placeholder="+1 999 9999 9999" type="tel" id="phone" name="phone" autocomplete="tel" required>
+          <h3>Business Information
+            <div></div>
+          </h3>
           <label for="business">Business Organization/Name:</label>
           <input placeholder="Name of your company, eg: Google" type="text" id="business" name="business" required>
+          <label for="organization_title">Organization Title:</label>
+          <input  placeholder="Your title in the company, eg: CEO" type="text" id="organization_title" name="organization_title" autocomplete="organization-title" required>
           <label for="level">Membership Level</label>
           <select name="level" id="level" required>
             <option value="" disabled selected>Select a membership level</option>
@@ -91,8 +97,58 @@
           </select>
           <label for="description">Description</label>
           <textarea id="description" name="description" placeholder="Briefly describe your business and what you do." rows="4" required></textarea>
+          <input class="hidden" type="date" id="timestamp" name="timestamp" required>
           <input type="submit" value="Submit">
         </form>
+        <section id="cards-container">
+          <div class="card np">
+            <h3>Non-Profit</h3>
+            <p>FREE</p>
+            <button>Learn More</button>
+            <dialog>
+              <ul>
+                <li>Priority listing in the directory</li>
+                <li>Featured placement on the homepage</li>
+                <li>Exclusive networking events</li>
+              </ul>
+            </dialog>
+          </div>
+          <div class="card gold">
+            <h3>Gold</h3>
+            <p>$1000/year</p>
+            <button>Learn More</button>
+            <dialog>
+              <ul>
+                <li>Priority listing in the directory</li>
+                <li>Featured placement on the homepage</li>
+                <li>Exclusive networking events</li>
+              </ul>
+            </dialog>
+          </div>
+          <div class="card silver">
+            <h3>Silver</h3>
+            <p>$500/year</p>
+            <button>Learn More</button>
+            <dialog>
+              <ul>
+                <li>Enhanced listing in the directory</li>
+                <li>Access to networking events</li>
+                <li>Monthly newsletter</li>
+              </ul>
+            </dialog>
+          </div>
+          <div class="card bronze">
+            <h3>Bronze</h3>
+            <p>$250/year</p>
+            <button>Learn More</button>
+            <dialog>
+              <ul>
+                <li>Basic listing in the directory</li>
+                <li>Access to online resources</li>
+              </ul>
+            </dialog>
+          </div>
+        </section>
       </section>
       <footer>
         <section>

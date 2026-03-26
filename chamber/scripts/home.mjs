@@ -52,7 +52,7 @@ getDirectoriesFromFile().then((directories) => {
 		<div class="business-card">
 <h3>${e.companyName}</h3>
 <p>${e.description}</p>
-              <div class="flex">
+              <div class="flex business-home">
 <img src="${e.imageFile}" alt="${e.companyName}">
                 <div>
                   <p><b>Phone:</b> +55 92 99999-9999</p>

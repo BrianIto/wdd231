@@ -14,6 +14,11 @@ main #content img {
 	width: 100%;
 }
 
+.business-home {
+	flex-direction: column;
+	font-size: 14px;
+}
+
 .relative {
 	position: relative;
 }

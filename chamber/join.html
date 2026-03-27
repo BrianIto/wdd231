@@ -65,7 +65,6 @@
         <form method="GET" action="thankyou.html">
           <h2>Join us</h2>
           <h3>Personal Information
-            <div></div>
           </h3>
           <div class="flex">
             <div>
@@ -77,18 +76,18 @@
               <input placeholder="Eg: Doe" type="text" id="last_name" title="last_name" name="last_name" autocomplete="family-name" required>
             </div>
           </div>
-          <label for="business" class="required">Email Address:</label>
+          <label for="email" class="required">Email Address:</label>
           <input placeholder="johndoe@mail.com" title="email" type="email" id="email" name="email" autocomplete="email" required>
-          <label for="business" class="required">Mobile Phone:</label>
+          <label for="phone" class="required">Mobile Phone:</label>
           <input title="phone" placeholder="+1 999 9999 9999" type="tel" id="phone" name="phone" autocomplete="tel" required>
-          <h3>Business Information
-            <div></div>
+          <h3>
+            Business Information
           </h3>
           <label for="business" class="required">Business Organization/Name:</label>
           <input title="business" placeholder="Name of your company, eg: Google" autocomplete="organization" type="text" id="business" name="business" required>
           <label for="organization_title">Organization Title:</label>
-          <input title="organization_title" pattern=""  placeholder="Your title in the company, eg: CEO" type="text" id="organization_title" name="organization_title" autocomplete="organization-title">
-          <label for="level" title= class="required">Membership Level</label>
+          <input  pattern="[A-Za-z\- ]{7,}" title="organization_title" pattern=""  placeholder="Your title in the company, eg: CEO" type="text" id="organization_title" name="organization_title" autocomplete="organization-title">
+          <label for="level" class="required">Membership Level</label>
           <select name="level" id="level" required>
             <option value="" disabled selected>Select a membership level</option>
             <option value="np">Non-Profit - FREE</option>
@@ -98,7 +97,7 @@
           </select>
           <label for="description">Description</label>
           <textarea id="description" title="organization_description" name="description" placeholder="Briefly describe your business and what you do." rows="4" ></textarea>
-          <input class="hidden" type="hidden" id="timestamp" name="timestamp" required>
+          <input class="hidden" type="hidden" id="timestamp" name="timestamp">
           <button type="submit">
             Submit
           </button>

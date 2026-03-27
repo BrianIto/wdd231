@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/weather.mjs" type="module"></script>
     <script src="scripts/hamb.js" defer></script>
+    <script src="scripts/join.mjs" defer></script>
     <script src="scripts/home.mjs" type="module" ></script>
   </head>
   <body>
@@ -46,7 +47,7 @@
             <li>
               <a href="directory.html">Directory</a>
             </li>
-            <li>
+            <li class="li-active">
               <a class="active" href="#">Join</a>
             </li>
             <li>
@@ -61,7 +62,7 @@
         </nav>
       </header>
       <section id="content" class="flex center-align">
-        <form method="get" action="thankyou.html">
+        <form method="GET" action="thankyou.html">
           <h2>Join us</h2>
           <h3>Personal Information
             <div></div>
@@ -96,8 +97,8 @@
             <option value="corporate">Gold - $1000/year</option>
           </select>
           <label for="description">Description</label>
-          <textarea id="description" name="description" placeholder="Briefly describe your business and what you do." rows="4" required></textarea>
-          <input class="hidden" type="date" id="timestamp" name="timestamp" required>
+          <textarea id="description" name="description" placeholder="Briefly describe your business and what you do." rows="4" ></textarea>
+          <input class="hidden" type="hidden" id="timestamp" name="timestamp" required>
           <input type="submit" value="Submit">
         </form>
         <section id="cards-container">

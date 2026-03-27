@@ -78,16 +78,16 @@
             </div>
           </div>
           <label for="business" class="required">Email Address:</label>
-          <input placeholder="johndoe@mail.com" type="email" id="email" name="email" autocomplete="email" required>
+          <input placeholder="johndoe@mail.com" title="email" type="email" id="email" name="email" autocomplete="email" required>
           <label for="business" class="required">Mobile Phone:</label>
-          <input placeholder="+1 999 9999 9999" type="tel" id="phone" name="phone" autocomplete="tel" required>
+          <input title="phone" placeholder="+1 999 9999 9999" type="tel" id="phone" name="phone" autocomplete="tel" required>
           <h3>Business Information
             <div></div>
           </h3>
           <label for="business" class="required">Business Organization/Name:</label>
-          <input title="business" placeholder="Name of your company, eg: Google" type="text" id="business" name="business" required>
+          <input title="business" placeholder="Name of your company, eg: Google" autocomplete="organization" type="text" id="business" name="business" required>
           <label for="organization_title">Organization Title:</label>
-          <input title="organization_title"  placeholder="Your title in the company, eg: CEO" type="text" id="organization_title" name="organization_title" autocomplete="organization-title">
+          <input title="organization_title" pattern=""  placeholder="Your title in the company, eg: CEO" type="text" id="organization_title" name="organization_title" autocomplete="organization-title">
           <label for="level" title= class="required">Membership Level</label>
           <select name="level" id="level" required>
             <option value="" disabled selected>Select a membership level</option>
@@ -97,7 +97,7 @@
             <option value="corporate">Gold - $1000/year</option>
           </select>
           <label for="description">Description</label>
-          <textarea id="description" name="description" placeholder="Briefly describe your business and what you do." rows="4" ></textarea>
+          <textarea id="description" title="organization_description" name="description" placeholder="Briefly describe your business and what you do." rows="4" ></textarea>
           <input class="hidden" type="hidden" id="timestamp" name="timestamp" required>
           <button type="submit">
             Submit

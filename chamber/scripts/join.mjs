@@ -9,3 +9,14 @@ modalButtons.forEach((buttonId, index) => {
 		modalElement.showModal();
 	});
 });
+
+const closeButtons = document.querySelectorAll(".close");
+
+closeButtons.forEach((button) => {
+	button.addEventListener("click", () => {
+		modalIds.forEach((modalId) => {
+			let modalElement = document.getElementById(modalId);
+			if (modalElement.open) modalElement.close();
+		});
+	});
+});

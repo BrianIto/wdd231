@@ -14,6 +14,23 @@ main #content img {
 	width: 100%;
 }
 
+.card dialog .close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	background: none;
+	border: none;
+	width: auto;
+	box-shadow: none;
+	color: #00000088;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.card dialog .close:hover {
+	color: #000000cc;
+}
+
 .business-home {
 	flex-direction: column;
 	font-size: 14px;
@@ -427,6 +444,7 @@ form button[type="submit"]:hover {
 
 dialog {
 	text-align: left;
+	padding: 3em;
 }
 
 .feature {

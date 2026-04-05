@@ -1,0 +1,115 @@
+:root {
+	/** Fonts */
+	--font-sans: 'Atkinson Hyperlegible Next', sans-serif;
+	--font-display: 'Press Start 2P', monospace;
+
+	--shadow-opacity: 50%;
+	/** Colors */
+	--color-foreground: hsl(110.55 100% 65.92%);
+	--color-foreground-low-opacity: hsl(110.55 100% 53.92% / var(--shadow-opacity));
+	--color-secondary: hsl(283.15, 99.16%, 73.53%);
+	--color-secondary-low-opacity: hsl(283.15 99.16% 63.53% / var(--shadow-opacity));
+	--color-background: #0F0F1B;
+	--color-white: #FFFFFF;
+}
+
+body {
+	font-family: var(--font-sans);
+	background-color: var(--color-background);
+	color: var(--color-white);
+ }
+
+ .ps2p {
+	 font-family: var(--font-display);
+	 text-transform: uppercase;
+ }
+
+ main {
+	 margin-top: 0;
+	 padding: 0 1rem;
+ }
+
+h1, h2, h3 {
+	font-family: var(--font-display);
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 20px var(--color-foreground-low-opacity);
+	text-align: center;
+	color: var(--color-foreground);
+}
+
+h1::after {
+	position: relative;
+	width: 240px;
+	margin-top: 36px;
+	box-shadow: 8px 5px 36px var(--color-foreground-low-opacity);
+	content: '';
+	height: 2px;
+	background: var(--color-foreground);
+}
+
+ul li {
+	margin-top: 1rem;
+}
+
+h2, h3 {
+	text-align: left;
+	align-items: flex-start;
+	text-shadow: 0px 0px 10px var(--color-secondary-low-opacity);
+	color: var(--color-secondary);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+
+.color {
+	width: 120px;
+	text-align: center;
+	height: 120px;
+	border-radius: 80px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 0px 20px #00000080;
+	justify-content: center;
+	font-weight: 500;
+}
+
+.bg-primary {
+	background-color: var(--color-foreground);
+	color: var(--color-background);
+}
+
+.bg-secondary {
+	background-color: var(--color-secondary);
+	color: var(--color-background);
+}
+
+.bg-background {
+	background-color: var(--color-background);
+	color: var(--color-white);
+}
+
+.bg-white {
+	background-color: var(--color-white);
+	color: var(--color-background);
+}
+
+.colors-container {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.wireframes {
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+}

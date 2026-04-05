@@ -18,7 +18,7 @@ main #content img {
 	position: absolute;
 	top: 0.5rem;
 	right: 0.5rem;
-	background: none;
+	background: #fff;
 	border: none;
 	width: auto;
 	box-shadow: none;

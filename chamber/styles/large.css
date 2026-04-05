@@ -158,8 +158,12 @@ ul li:last-of-type {
 	"img address" 
 	"img description";
 	text-align: left;
-	gap: 1rem;
+	column-gap: 1rem;
 	align-items: center;
+}
+
+.grid-area div h2 {
+	margin: 0;
 }
 #content .grid-area div img {
 	height: 100%;

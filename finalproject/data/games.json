@@ -1,0 +1,72 @@
+[
+	{
+		"name": "Super Mario Bros.",
+		"year": 1985,
+		"description": "A classic platformer where Mario and Luigi journey through the Mushroom Kingdom to rescue Princess Toadstool from Bowser.",
+		"tag": "platform",
+		"rating": 9.5
+	},
+	{
+		"name": "The Legend of Zelda",
+		"year": 1986,
+		"description": "An action-adventure game where Link must rescue Princess Zelda and defeat the evil Ganon.",
+		"tag": "adventure",
+		"rating": 9.3
+	},
+	{
+		"name": "Pac-Man",
+		"year": 1980,
+		"description": "Guide Pac-Man through a maze, eating pellets and avoiding ghosts in this iconic arcade game.",
+		"tag": "arcade",
+		"rating": 9.0
+	},
+	{
+		"name": "Tetris",
+		"year": 1984,
+		"description": "A tile-matching puzzle game where players arrange falling blocks to clear lines.",
+		"tag": "puzzle",
+		"rating": 9.2
+	},
+	{
+		"name": "Sonic the Hedgehog",
+		"year": 1991,
+		"description": "A fast-paced platformer featuring Sonic as he battles Dr. Robotnik to save his animal friends.",
+		"tag": "platform",
+		"rating": 8.9
+	},
+	{
+		"name": "Street Fighter II",
+		"year": 1991,
+		"description": "A competitive fighting game with a diverse cast of characters and special moves.",
+		"tag": "fighting",
+		"rating": 9.1
+	},
+	{
+		"name": "Donkey Kong",
+		"year": 1981,
+		"description": "Jumpman (Mario) must rescue Pauline from Donkey Kong in this classic arcade platformer.",
+		"tag": "platform",
+		"rating": 8.8
+	},
+	{
+		"name": "Metroid",
+		"year": 1986,
+		"description": "Explore the planet Zebes as Samus Aran in this action-adventure game with non-linear gameplay.",
+		"tag": "action",
+		"rating": 8.7
+	},
+	{
+		"name": "Mega Man 2",
+		"year": 1988,
+		"description": "Guide Mega Man through robot master stages to defeat Dr. Wily in this challenging platformer.",
+		"tag": "action",
+		"rating": 8.9
+	},
+	{
+		"name": "Castlevania",
+		"year": 1986,
+		"description": "Simon Belmont battles through Dracula's castle using his whip and sub-weapons.",
+		"tag": "action",
+		"rating": 8.6
+	}
+]

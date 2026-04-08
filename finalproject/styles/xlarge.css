@@ -1,0 +1,13 @@
+@media screen and (min-width: 1350px) {
+  .hero-text {
+    max-width: 35%;
+  }
+  .cards {
+    margin-top: -4rem;
+    padding: 0 8rem;
+  }
+  .preview {
+    flex-direction: row;
+    padding: 0 8rem;
+  }
+}

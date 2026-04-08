@@ -131,7 +131,6 @@ header > nav {
 }
 
 header > nav > .navigation {
-  display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
@@ -198,7 +197,7 @@ header #menu::before {
 }
 
 header .navigation.open {
-  display: block;
+  display: flex;
 }
 
 picture,

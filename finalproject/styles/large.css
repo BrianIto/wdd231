@@ -1,4 +1,11 @@
 @media screen and (min-width: 750px) {
+  #search-form {
+    flex-direction: row;
+    align-items: end;
+  }
+  #search-form button {
+    padding: 14px 24px;
+  }
   .hero-gradient {
     position: absolute;
     left: 0;

@@ -18,7 +18,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css">
     <title>Catalog - Retro Games</title>
-    <script src="scripts/index.js" type="module"></script>
+    <script src="scripts/catalog.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -47,6 +47,17 @@
       </nav>
     </header>
     <main>
+      <h1>Catalog of Games</h1>
+      <form action="#" method="get" id="search-form">
+        <div>
+          <label for="search">Search</label>
+          <input type="text" id="search" name="search" placeholder="Search for a game...">
+        </div>
+        <button type="submit">Search</button>
+      </form>
+      <div id="catalog">
+      </div>
+      <p id="game-amount"></p>
     </main>
     <footer>
       <h2>Retro Games Vault</h2>

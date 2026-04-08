@@ -43,24 +43,46 @@ function getRandomThree(data) {
 	return randomThree;
 }
 
-fetch(requestURL)
-	.then(function (response) {
-		return response.json();
-	})
-	.then(function (json) {
-		data = json;
-		let random = getRandomThree(data);
-		const container = document.querySelector(".preview");
-		random.forEach((game) => {
-			const card = document.createElement("div");
-			card.classList.add("catalog-el");
-			card.innerHTML = `
+/**
+ * Fetches the game catalog from the specified URL and returns it as a JSON object.
+ * @returns {Promise<Game[]>} A promise that resolves to an array of Game objects.
+ */
+async function fetchCatalog() {
+	return fetch(requestURL).then((response) => response.json());
+}
+
+/**
+ * @param {string} name
+ * @param {string} description
+ * @param {number} Rating
+ */
+function populateCard(name, description, rating, tag) {
+	return `
 			<div>
-				<h3>${game.name}</h3>
-				<p>${game.description}</p>
-				<p>Rating: ${game.rating}</p>
+				<h3>${name}</h3>
+				<p>${description}</p>
+				<p>Rating: ${rating}</p>
+				<div class="tag">${tag}</div>
 				</div>
 			`;
-			container.appendChild(card);
-		});
+}
+
+fetchCatalog().then(function (json) {
+	data = json;
+	/** @type {Game[]} */
+	let random = getRandomThree(data);
+	const container = document.querySelector(".preview");
+	random.forEach((game) => {
+		const card = document.createElement("div");
+		card.classList.add("catalog-el");
+		card.innerHTML = populateCard(
+			game.name,
+			game.description,
+			game.rating,
+			game.tag,
+		);
+		container.appendChild(card);
 	});
+});
+
+export { fetchCatalog, populateCard };

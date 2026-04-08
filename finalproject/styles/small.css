@@ -141,6 +141,7 @@ header > nav > .navigation > a > p {
   height: 43px;
   display: flex;
   align-items: center;
+  margin: 0;
   font-size: 13px;
   padding: 0 20px;
   transition: all 0.2s ease;
@@ -178,9 +179,6 @@ header > nav > .navigation > a > p:hover:not(.li-active) {
   color: var(--color-secondary);
 }
 
-header > nav > .navigation > a > p {
-  margin: 0;
-}
 header > nav a {
   color: var(--color-white);
   text-decoration: none;

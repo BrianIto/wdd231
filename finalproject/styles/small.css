@@ -23,6 +23,12 @@ body {
   color: var(--color-white);
 }
 
+#about {
+  padding: 0 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
 .ps2p {
   font-family: var(--font-display);
   text-transform: uppercase;

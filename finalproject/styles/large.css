@@ -63,7 +63,7 @@
     padding: 0;
     gap: 24px;
   }
-  header > nav > .navigation > a > li {
+  header > nav > .navigation > a > p {
     height: 43px;
     display: flex;
     align-items: center;

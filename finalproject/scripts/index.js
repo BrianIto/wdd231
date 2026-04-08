@@ -19,7 +19,8 @@ lastModified.innerHTML = date;
 
 const requestURL = "data/games.json";
 
-/** @typedef {Object} Game
+/**
+ * @typedef {Object} Game
  * @property {string} name
  * @property {string} year
  * @property {string} description

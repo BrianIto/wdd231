@@ -38,7 +38,7 @@
     display: none;
   }
 
-  header > nav > ul.navigation {
+  header > nav > .navigation {
     display: flex;
     margin-right: 20px;
     flex-direction: row;
@@ -49,14 +49,14 @@
     display: block;
   }
 
-  header > nav > ul {
+  header > nav > .navigation {
     display: flex;
     flex-direction: row;
     list-style: none;
     padding: 0;
     gap: 24px;
   }
-  header > nav > ul > a > li {
+  header > nav > .navigation > a > li {
     height: 43px;
     display: flex;
     align-items: center;
@@ -66,13 +66,14 @@
     box-shadow: none;
   }
 
-  header > nav > ul > a > li.li-active {
+  header > nav > .navigation > a > .li-active {
     background: transparent;
     color: var(--color-foreground);
+    padding-bottom: 0.5rem;
     box-shadow: 0px 1px 0px var(--color-foreground);
   }
 
-  header > nav > ul > a > li:hover:not(.li-active) {
+  header > nav > .navigation > a > p:hover:not(.li-active) {
     color: var(--color-secondary);
   }
   header > nav a {

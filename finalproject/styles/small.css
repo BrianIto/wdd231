@@ -251,7 +251,8 @@ picture > img {
   line-height: 1.45;
 }
 
-.hero-text button {
+.hero-text .button-link {
+  display: inline-block;
   margin-top: 24px;
   padding: 12px 24px;
   font-size: 14px;
@@ -262,6 +263,7 @@ picture > img {
   background-color: var(--color-secondary);
   border: none;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.2s ease;
 }
 
@@ -283,7 +285,7 @@ picture > img {
   margin-top: 0;
 }
 
-.hero-text button:hover {
+.hero-text .button-link:hover {
   transform: translateY(-2px);
 }
 
